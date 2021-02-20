@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Register"
+    android:background="@color/whitecolor"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolor"
+        app:titleTextColor="@color/fullbluecolor"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/card"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="5dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layoutbackground"
+                android:orientation="vertical"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:hintEnabled="true"
+                    android:layout_marginTop="40dp"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="#182367"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="@string/enter_your_name"
+                        android:fontFamily="serif"
+                        android:drawableEnd="@drawable/profile"
+                        android:inputType="textPersonName"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:hintEnabled="true"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="10dp"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="#182367"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableEnd="@drawable/ic_email_black_24dp"
+                        android:hint="@string/enter_your_email"
+                        android:fontFamily="serif"
+                        android:inputType="textEmailAddress"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edphonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:hintEnabled="true"
+                    android:layout_marginTop="10dp"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="#182367"
+                    app:errorEnabled="true"
+                    app:counterEnabled="true"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="serif"
+                        android:hint="@string/enter_your_phone_number"
+                        android:drawableEnd="@drawable/phone"
+                        android:inputType="phone"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:hintEnabled="true"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="10dp"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="#182367"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableEnd="@drawable/location"
+                        android:hint="@string/address"
+                        android:fontFamily="serif"
+                        android:inputType="textPostalAddress"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:hintEnabled="true"
+                    app:errorEnabled="true"
+                    app:counterEnabled="true"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="10dp"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="#182367"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:drawableEnd="@drawable/lock"
+                        android:hint="@string/enterpassword"
+                        android:fontFamily="serif"
+                        android:inputType="numberPassword"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edconfirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:hintEnabled="true"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    app:counterEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="#182367"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="@string/confirm_your_password"
+                        android:fontFamily="serif"
+                        android:drawableEnd="@drawable/lock"
+                        android:inputType="numberPassword"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/headerbackground"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnregister"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="@string/register"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

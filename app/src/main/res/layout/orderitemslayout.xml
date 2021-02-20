@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:id="@+id/singleitemlayout"
+    android:weightSum="6"
+    >
+
+    <TextView
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_height="3dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:text="@string/itemname"
+            android:id="@+id/txtitemname"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/fullbluecolor"
+            android:fontFamily="serif"
+            android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2.0"
+        android:text="@string/itemprice"
+        android:id="@+id/txtitemprice"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="@color/greencolor"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

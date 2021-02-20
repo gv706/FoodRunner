@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment"
+    android:background="@drawable/headerbackground">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/headericon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/profileplaceholder"
+            app:civ_border_color="#182367"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#182367"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:id="@+id/name"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/whitecolor"
+            android:text="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#182367"
+            android:textStyle="bold"
+            android:textSize="18sp"
+android:id="@+id/mobilenumber"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/whitecolor"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="serif"
+            android:id="@+id/email"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#182367"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/whitecolor"
+            android:text="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/address"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="18sp"
+android:textColor="#182367"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/whitecolor"
+            android:text=""
+            android:layout_marginBottom="200dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>

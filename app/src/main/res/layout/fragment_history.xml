@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RestaurantDescription">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:gravity="center_vertical"
+        android:id="@+id/text"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp"
+        android:textStyle="bold"
+        android:text="@string/your_previous_orders_are_listed_below"
+        android:textColor="@color/fullbluecolor"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/horizontalline"
+        android:layout_below="@+id/text"
+        android:background="@color/colorPrimary"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerOrderItems"
+        android:layout_below="@id/horizontalline"
+        />
+
+
+</RelativeLayout>

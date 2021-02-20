@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/headerbackground"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/headericon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/profileplaceholder"
+            app:civ_border_color="#182367"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/username"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/headericon"
+            android:textSize="23sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/whitecolor"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/indian_code"
+            android:fontFamily="serif"
+            android:id="@+id/usermobilenumber"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/username"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/whitecolor"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
